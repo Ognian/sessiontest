@@ -10,6 +10,19 @@ app.use(morgan('dev')); //this is the express logger...
 app.use(require('errorhandler')({dumpExceptions: true, showStack: true}));
 
 
+var blocked = require('blocked');
+//setInterval(function(){
+//    Array(10000000).join('a')
+//}, 500);
+//
+//setInterval(function(){
+//    Array(100000000).join('a')
+//}, 3000);
+
+blocked(function(ms){
+    console.log('BLOCKED FOR %sms', ms | 0);
+});
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // HERE comes the problem:
 var session = require('express-session');

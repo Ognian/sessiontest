@@ -24,6 +24,8 @@
     "connect-multiparty": "1.2.5"
   },
   "devDependencies": {
+    "blocked": "1.0.0"
+
   },
   "engines": {
     "node": ">= 0.10",
