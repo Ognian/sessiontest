@@ -5,8 +5,8 @@ var express = require('express'),
     http = require('http'),
     server = http.createServer(app)
     ;
-var morgan = require('morgan');
-app.use(morgan('dev')); //this is the express logger...
+//var morgan = require('morgan');
+//app.use(morgan('dev')); //this is the express logger...
 app.use(require('errorhandler')({dumpExceptions: true, showStack: true}));
 
 
