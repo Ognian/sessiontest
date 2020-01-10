@@ -20,7 +20,7 @@
     "express-session": "1.8.2",
 
     "body-parser": "1.9.0",
-    "method-override": "2.2.0",
+    "method-override": "3.0.0",
     "connect-multiparty": "1.2.5"
   },
   "devDependencies": {
